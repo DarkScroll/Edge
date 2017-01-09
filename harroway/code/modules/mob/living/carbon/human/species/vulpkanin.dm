@@ -1,3 +1,4 @@
+#define ACC_PATH 'harroway/icons/mob/species/vulpkanin/human_face.dmi'
 
 /datum/language/vulpkanin
 	name = LANGUAGE_CANILUNZT
@@ -86,3 +87,160 @@
 	*/
 //datum/species/vulpkanin/handle_death(var/mob/living/carbon/human/H)
 //	H.stop_tail_wagging(1)
+
+/datum/sprite_accessory
+	hair
+		vulp_hair_none
+			name = "None"
+			icon_state = "bald"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_kajam
+			name = "Kajam"
+			icon = ACC_PATH
+			icon_state = "kajam"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_keid
+			name = "Keid"
+			icon = ACC_PATH
+			icon_state = "keid"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_adhara
+			name = "Adhara"
+			icon = ACC_PATH
+			icon_state = "adhara"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_kleeia
+			name = "Kleeia"
+			icon = ACC_PATH
+			icon_state = "kleeia"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_mizar
+			name = "Mizar"
+			icon = ACC_PATH
+			icon_state = "mizar"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_apollo
+			name = "Apollo"
+			icon = ACC_PATH
+			icon_state = "apollo"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_belle
+			name = "Belle"
+			icon = ACC_PATH
+			icon_state = "belle"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_bun
+			name = "Bun"
+			icon = ACC_PATH
+			icon_state = "bun"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_jagged
+			name = "Jagged"
+			icon = ACC_PATH
+			icon_state = "jagged"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_curl
+			name = "Curl"
+			icon = ACC_PATH
+			icon_state = "curl"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_hawk
+			name = "Hawk"
+			icon = ACC_PATH
+			icon_state = "hawk"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_anita
+			name = "Anita"
+			icon = ACC_PATH
+			icon_state = "anita"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_short
+			name = "Short"
+			icon = ACC_PATH
+			icon_state = "short"
+			species_allowed = list("Vulpkanin")
+
+		vulp_hair_spike
+			name = "Spike"
+			icon = ACC_PATH
+			icon_state = "spike"
+			species_allowed = list("Vulpkanin")
+
+	facial_hair
+		vulp_blaze
+			name = "Blaze"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_blaze"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_vulpine
+			name = "Vulpine"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_vulpine"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_vulpine_fluff
+			name = "Vulpine and Earfluff"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_vulpine_fluff"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_mask
+			name = "Mask"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_mask"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_patch
+			name = "Patch"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_patch"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_ruff
+			name = "Ruff"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_ruff"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_kita
+			name = "Kita"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_kita"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+		vulp_swift
+			name = "Swift"
+			icon = ACC_PATH
+			icon_state = "vulp_facial_swift"
+			species_allowed = list("Vulpkanin")
+			gender = NEUTER
+
+	skin
+		vulpkanin
+			name = "Default Vulpkanin skin"
+			icon_state = "default"
+			icon = 'harroway/icons/mob/human_races/r_vulpkanin.dmi'
+			species_allowed = list("Vulpkanin")
+
+#undef ACC_PATH
