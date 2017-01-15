@@ -10,9 +10,9 @@ var/global/list/acceptedKeys = list()
 
 	var/list/close = list("Принято!","Подтверждаю","ОТЛИЧНО!","Я принимаю","Продолжить","К веселью!","Начнем!")
 	var/output = {"
-	[join_motd]
+	[sanitize_local(join_motd, SANITIZE_BROWSER)]
 	<br>
-	[file2text("config/rules.html")]
+	[sanitize_local(file2text("config/rules.html"), SANITIZE_BROWSER)]
 	<br>
 	<div align='center'><p><b><a href='byond://?src=\ref[src];close_info=1'>[pick(close)]</A></b></p>
 	</div>"}

@@ -73,8 +73,8 @@
 
 #define random_id(key,min_id,max_id) uniqueness_repository.Generate(/datum/uniqueness_generator/id_random, key, min_id, max_id)
 
-#define to_chat(target, message)                            target << message
-#define to_world(message)                                   world << message
+//#define to_chat(target, message)                            target << message
+//#define to_world(message)                                   world << message
 #define sound_to(target, sound)                             target << sound
 #define to_file(file_entry, file_content)                   file_entry << file_content
 #define show_browser(target, browser_content, browser_name) target << browse(browser_content, browser_name)
