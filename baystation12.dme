@@ -2248,6 +2248,7 @@
 #include "code\ZAS\Turf.dm"
 #include "code\ZAS\Variable Settings.dm"
 #include "code\ZAS\Zone.dm"
+#include "harroway\code\_helpers\russian_text.dm"
 #include "harroway\code\modules\mob\living\carbon\human\species\vulpkanin.dm"
 #include "harroway\code\modules\mob\new_player\server_info_window.dm"
 #include "interface\interface.dm"

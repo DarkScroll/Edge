@@ -22,7 +22,7 @@
  * Text sanitization
  */
 
-//Used for preprocessing entered text
+/*Used for preprocessing entered text
 /proc/sanitize(var/input, var/max_length = MAX_MESSAGE_LEN, var/encode = 1, var/trim = 1, var/extra = 1)
 	if(!input)
 		return
@@ -48,7 +48,7 @@
 		//Maybe, we need trim text twice? Here and before copytext?
 		input = trim(input)
 
-	return input
+	return input*/
 
 //Run sanitize(), but remove <, >, " first to prevent displaying them as &gt; &lt; &34; in some places, after html_encode().
 //Best used for sanitize object names, window titles.
