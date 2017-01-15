@@ -153,7 +153,7 @@ var/global/list/additional_antag_types = list()
 		if((player.client)&&(player.ready))
 			playerC++
 
-	if(playerC < required_players)
+	if(playerC < required_players && !Debug2)
 		return "Not enough players, [src.required_players] players needed."
 
 	if(!(antag_templates && antag_templates.len))
