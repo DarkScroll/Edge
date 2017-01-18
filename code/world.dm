@@ -1,6 +1,6 @@
 #define WORLD_ICON_SIZE 32
 
-/var/server_name = "Baystation 12"
+/var/server_name = "Harroway Edge"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()
@@ -139,6 +139,10 @@
 	processScheduler = new
 	master_controller = new /datum/controller/game_controller()
 	spawn(1)
+		for(var/turf/T in world)
+			T.initialize()
+			turfs += T
+
 		processScheduler.deferSetupFor(/datum/controller/process/ticker)
 		processScheduler.setup()
 		master_controller.setup()
@@ -148,7 +152,7 @@
 
 
 
-	spawn(3000)		//so we aren't adding to the round-start lag
+	spawn(2000)		//so we aren't adding to the round-start lag
 		if(config.ToRban)
 			ToRban_autoupdate()
 
@@ -469,13 +473,13 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 		for(var/client/C in clients)
-			to_chat(C, link("byond://[config.server]"))
+			C << link("byond://[config.server]")
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")
 		to_world("<span class=danger>World reboot waiting for external scripts. Please be patient.</span>")
 		return
-
+	reboot_updating()
 	..(reason)
 
 /world/Del()
@@ -570,9 +574,9 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://ss13.harroway.su/forum\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
-	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Forum"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
 

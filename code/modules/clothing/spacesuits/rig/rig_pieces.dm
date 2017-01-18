@@ -12,6 +12,7 @@
 	brightness_on = 4
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Resomi" = 'icons/mob/species/resomi/helmet.dmi'
@@ -52,6 +53,7 @@
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/suit.dmi',
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/suit.dmi',
 		"Resomi" = 'icons/mob/species/resomi/suit.dmi'
 		)
 	var/list/supporting_limbs = list() //If not-null, automatically splints breaks. Checked when removing the suit.

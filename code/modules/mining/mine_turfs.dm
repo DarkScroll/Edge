@@ -41,7 +41,11 @@ var/list/mining_floors = list()
 	mining_walls += src
 	spawn(0)
 		MineralSpread()
-	spawn(2)
+	if(ticker)
+		initialize()
+
+/turf/unsimulated/mineral/initialize()
+	spawn(1)
 		update_icon(1)
 
 /turf/simulated/mineral/Destroy()

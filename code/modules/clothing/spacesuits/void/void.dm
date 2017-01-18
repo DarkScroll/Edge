@@ -15,6 +15,7 @@
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/helmet.dmi',
 		"Resomi" = 'icons/mob/species/resomi/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
@@ -43,6 +44,7 @@
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Tajara" = 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/suit.dmi',
 		"Resomi" = 'icons/mob/species/resomi/suit.dmi',
 		)
 	sprite_sheets_obj = list(

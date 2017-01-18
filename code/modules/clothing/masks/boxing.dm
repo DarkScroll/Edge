@@ -8,6 +8,7 @@
 	w_class = ITEM_SIZE_SMALL
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/mask.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/mask.dmi',
 		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
 		)
 
@@ -20,6 +21,7 @@
 	w_class = ITEM_SIZE_SMALL
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/mask.dmi',
+		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/mask.dmi',
 		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
 		)
 
