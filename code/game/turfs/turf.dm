@@ -35,6 +35,7 @@
 		spawn( 0 )
 			src.Entered(AM)
 			return
+	turfs |= src
 
 	if(dynamic_lighting)
 		luminosity = 0

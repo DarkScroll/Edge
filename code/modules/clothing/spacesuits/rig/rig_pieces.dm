@@ -12,7 +12,6 @@
 	brightness_on = 4
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi',
-		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Resomi" = 'icons/mob/species/resomi/helmet.dmi'
@@ -52,7 +51,6 @@
 	can_breach = 1
 	sprite_sheets = list(
 		"Tajara" = 'icons/mob/species/tajaran/suit.dmi',
-		"Vulpkanin" = 'harroway/icons/mob/species/vulpkanin/suit.dmi',
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Resomi" = 'icons/mob/species/resomi/suit.dmi'
 		)
