@@ -319,7 +319,7 @@
 							src.active2.fields["cdi_d"] = t1
 					if("notes")
 						if (istype(src.active2, /datum/data/record))
-							var/t1 = sanitize(input("Please summarize notes:", "Med. records", lhtml_decode(src.active2.fields["notes"], SANITIZE_TEMP), null)  as message, extra = 0, max_length = MAX_PAPER_MESSAGE_LEN, mode = SANITIZE_BROWSER)///WUT
+							var/t1 = sanitize(input("Please summarize notes:", "Med. records", lhtml_decode(src.active2.fields["notes"], SANITIZE_TEMP), null)  as message, extra = 0, max_length = MAX_PAPER_MESSAGE_LEN, mode = SANITIZE_BROWSER)
 							if ((!( t1 ) || !( src.authenticated ) || usr.stat || usr.restrained() || (!in_range(src, usr) && (!istype(usr, /mob/living/silicon))) || src.active2 != a2))
 								return
 							src.active2.fields["notes"] = t1

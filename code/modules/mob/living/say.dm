@@ -41,7 +41,7 @@ var/list/department_radio_keys = list(
 	  ":ñ" = "Command",		".ñ" = "Command",
 	  ":ò" = "Science",		".ò" = "Science",
 	  ":ü" = "Medical",		".ü" = "Medical",
-	  ":ó" = "Engineering", ".ó" = "Engineering",
+	  ":ó" = "Engineering",	".ó" = "Engineering",
 	  ":û" = "Security",	".û" = "Security",
 	  ":ö" = "whisper",		".ö" = "whisper",
 	  ":å" = "Mercenary",	".å" = "Mercenary",

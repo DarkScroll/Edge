@@ -60,7 +60,7 @@
 		switch(href_list["flavour_text_robot"])
 			if("open")
 			if("Default")
-				var/msg = sanitize(input(usr,"Set the default flavour text for your robot. It will be used for any module without individual setting.","Flavour Text",lhtml_decode(pref.flavour_texts_robot["Default"])) as message, extra = 0, mode = SANITIZE_BROWSER)
+				var/msg = sanitize(input(usr,"Set the default flavour text for your robot. It will be used for any module without individual setting.","Flavour Text",lhtml_decode(pref.flavour_texts_robot["Default"], SANITIZE_TEMP)) as message, extra = 0, mode = SANITIZE_BROWSER)
 				if(CanUseTopic(user))
 					pref.flavour_texts_robot[href_list["flavour_text_robot"]] = msg
 			else
